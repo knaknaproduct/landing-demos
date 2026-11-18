@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Дальний рейс - автобусы из Самары в города Поволжья</title>
+<meta name="description" content="Ежедневные междугородние рейсы из Самары и Тольятти в Казань, Ульяновск, Пензу, Саратов, Оренбург и Уфу. Расписание, цены, покупка билетов.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Unbounded:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Crect width='26' height='26' rx='4' fill='%231b4f9c'/%3E%3Cpath d='M2 20h4M10 20h6M20 20h4' stroke='%23ffc72c' stroke-width='3'/%3E%3Cpath d='M6 13 13 5l7 8' fill='none' stroke='%23fff' stroke-width='3'/%3E%3C/svg%3E">
+</head>
+<body>
+<header class="header">
+  <div class="wrap header__in">
+    <a class="logo" href="index.html" aria-label="Дальний рейс - на главную">
+      <span class="logo__sign" aria-hidden="true">
+        <svg width="26" height="26" viewBox="0 0 26 26"><path d="M2 20h4M10 20h6M20 20h4" stroke="#ffc72c" stroke-width="3"/><path d="M6 13 13 5l7 8" fill="none" stroke="#fff" stroke-width="3"/></svg>
+      </span>
+      <span class="logo__name">Дальний рейс<small>Междугородние перевозки</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Основное меню">
+      <a href="routes.html">Маршруты</a>
+      <a href="passengers.html">Пассажирам</a>
+      <a href="fleet.html">Автопарк</a>
+      <a href="about.html">О компании</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <a class="header__phone" href="tel:+78460000000">+7 (846) 000-00-00<small>Диспетчер, круглосуточно</small></a>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><span></span></button>
+  </div>
+</header>
+<main>
+<section class="hero">
+  <div class="wrap">
+    <h1>Автобусы из Самары в 8 городов Поволжья и Урала</h1>
+    <p class="lead">32 рейса в день с Центрального автовокзала. Билет можно купить онлайн, в кассе или у водителя.</p>
+
+    <form class="search" aria-label="Поиск рейса">
+      <div class="field">
+        <label for="from">Откуда</label>
+        <select id="from" name="from">
+          <option>Самара</option>
+          <option>Тольятти</option>
+          <option>Сызрань</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="to">Куда</label>
+        <select id="to" name="to">
+          <option value="">Все направления</option>
+          <option>Казань</option>
+          <option>Ульяновск</option>
+          <option>Пенза</option>
+          <option>Саратов</option>
+          <option>Оренбург</option>
+          <option>Уфа</option>
+          <option>Самара</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="date">Дата поездки</label>
+        <input id="date" name="date" type="date" value="2026-11-14">
+      </div>
+      <button class="btn btn--yellow" type="submit">Найти рейс</button>
+    </form>
+
+    <div class="routeline" aria-label="Пример маршрута Самара - Казань">
+      <p class="routeline__title">Самый популярный маршрут: <a href="route.html">Самара - Казань</a>, рейс 07:00</p>
+      <div class="routeline__track">
+        <svg class="routeline__bus" viewBox="0 0 42 42" aria-hidden="true"><circle cx="21" cy="21" r="20" fill="#ffc72c"/><rect x="11" y="10" width="20" height="19" rx="3" fill="#23272b"/><rect x="13.5" y="12.5" width="15" height="7" rx="1" fill="#ffc72c"/><circle cx="15" cy="25" r="1.6" fill="#ffc72c"/><circle cx="27" cy="25" r="1.6" fill="#ffc72c"/><rect x="13" y="29" width="3" height="3" fill="#23272b"/><rect x="26" y="29" width="3" height="3" fill="#23272b"/></svg>
+        <div class="stop stop--end"><span class="stop__dot"></span><span class="stop__time">07:00</span><span class="stop__city">Самара</span></div>
+        <div class="stop"><span class="stop__dot"></span><span class="stop__time">08:10</span><span class="stop__city">Тольятти</span></div>
+        <div class="stop"><span class="stop__dot"></span><span class="stop__time">09:40</span><span class="stop__city">Димитровград</span></div>
+        <div class="stop"><span class="stop__dot"></span><span class="stop__time">10:50</span><span class="stop__city">Ульяновск</span></div>
+        <div class="stop stop--end"><span class="stop__dot"></span><span class="stop__time">13:10</span><span class="stop__city">Казань</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section__head">
+      <h2>Ближайшие отправления</h2>
+      <span class="muted">Самара, Центральный автовокзал, 14 ноября</span>
+    </div>
+    <div class="board">
+      <table>
+        <thead>
+          <tr><th>Время</th><th>Направление</th><th>В пути</th><th>Цена</th><th>Свободно</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="board__time">06:30</td><td class="board__dir"><a href="routes.html">Самара - Ульяновск</a><span>через Тольятти, Димитровград</span></td><td class="board__dur">3 ч 50 мин</td><td>1 000 ₽</td><td class="seats seats--ok">18 мест</td></tr>
+          <tr><td class="board__time">07:00</td><td class="board__dir"><a href="route.html">Самара - Казань</a><span>через Тольятти, Ульяновск</span></td><td class="board__dur">6 ч 10 мин</td><td>1 450 ₽</td><td class="seats seats--ok">23 места</td></tr>
+          <tr><td class="board__time">07:40</td><td class="board__dir"><a href="routes.html">Самара - Пенза</a><span>через Сызрань, Кузнецк</span></td><td class="board__dur">5 ч 30 мин</td><td>1 250 ₽</td><td class="seats seats--few">4 места</td></tr>
+          <tr><td class="board__time">08:15</td><td class="board__dir"><a href="routes.html">Самара - Оренбург</a><span>через Бузулук</span></td><td class="board__dur">5 ч 40 мин</td><td>1 300 ₽</td><td class="seats seats--ok">31 место</td></tr>
+          <tr><td class="board__time">09:20</td><td class="board__dir"><a href="routes.html">Самара - Уфа</a><span>через Похвистнево, Октябрьский</span></td><td class="board__dur">7 ч 30 мин</td><td>1 790 ₽</td><td class="seats seats--ok">12 мест</td></tr>
+          <tr><td class="board__time">10:30</td><td class="board__dir"><a href="route.html">Самара - Казань</a><span>через Тольятти, Ульяновск</span></td><td class="board__dur">6 ч 10 мин</td><td>1 450 ₽</td><td class="seats seats--few">2 места</td></tr>
+        </tbody>
+      </table>
+      <div class="board__foot"><span>Свободные места обновляются каждые 5 минут</span><a href="routes.html">Всё расписание</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="section__head">
+      <h2>Популярные направления</h2>
+      <a href="routes.html">Все 8 маршрутов</a>
+    </div>
+    <div class="routes">
+      <a class="route" href="route.html">
+        <span class="route__name">Самара - Казань<span class="route__via">через Тольятти, Димитровград, Ульяновск</span></span>
+        <span class="route__meta route__meta--dur"><b>В пути</b>6 ч 10 мин</span>
+        <span class="route__meta"><b>Рейсов в день</b>4</span>
+        <span class="route__price"><small>от</small> 1 450 ₽</span>
+      </a>
+      <a class="route" href="routes.html">
+        <span class="route__name">Самара - Ульяновск<span class="route__via">через Тольятти, Димитровград</span></span>
+        <span class="route__meta route__meta--dur"><b>В пути</b>3 ч 50 мин</span>
+        <span class="route__meta"><b>Рейсов в день</b>6</span>
+        <span class="route__price"><small>от</small> 1 000 ₽</span>
+      </a>
+      <a class="route" href="routes.html">
+        <span class="route__name">Самара - Пенза<span class="route__via">через Сызрань, Кузнецк</span></span>
+        <span class="route__meta route__meta--dur"><b>В пути</b>5 ч 30 мин</span>
+        <span class="route__meta"><b>Рейсов в день</b>3</span>
+        <span class="route__price"><small>от</small> 1 250 ₽</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <div class="photo"><img src="https://images.unsplash.com/photo-1570125909517-53cb21c89ff2?auto=format&fit=crop&w=1100&q=75" alt="Междугородний автобус компании на стоянке" loading="lazy"></div>
+    <div>
+      <h2>Свой автопарк из 21 автобуса</h2>
+      <p>Ездим на Yutong, Higer и King Long не старше 2021 года. Перед каждым рейсом автобус проходит техосмотр, а водитель - медосмотр.</p>
+      <div class="facts">
+        <div class="fact"><div class="fact__n">4,2</div><div class="fact__t">года - средний возраст автобусов</div></div>
+        <div class="fact"><div class="fact__n">49-53</div><div class="fact__t">места в салоне</div></div>
+        <div class="fact"><div class="fact__n">100%</div><div class="fact__t">с кондиционером и USB</div></div>
+      </div>
+      <a class="btn btn--ghost" href="fleet.html">Смотреть автопарк</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="wrap">
+    <h2>Как мы работаем</h2>
+    <div class="points" style="margin-top:28px">
+      <div class="point">
+        <h3>Отправляемся по расписанию</h3>
+        <p>98% рейсов в 2025 году ушли вовремя. Если рейс задерживается, присылаем СМС за час до отправления.</p>
+      </div>
+      <div class="point">
+        <h3>Берём багаж без доплаты</h3>
+        <p>Одно место багажа до 30 кг и ручная кладь входят в цену билета. Велосипед и лыжи - по отдельному тарифу.</p>
+      </div>
+      <div class="point">
+        <h3>Страхуем каждого пассажира</h3>
+        <p>Полис ОСГОП оформляется автоматически при покупке билета, отдельно платить за него не нужно.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap cta__in">
+    <div>
+      <h2>Нужен заказной автобус?</h2>
+      <p>Довезём группу на свадьбу, корпоратив или экскурсию. Рассчитаем стоимость за 15 минут.</p>
+    </div>
+    <a class="cta__phone" href="tel:+78460000000">+7 (846) 000-00-00</a>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a class="logo" href="index.html">
+          <span class="logo__sign" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 26 26"><path d="M2 20h4M10 20h6M20 20h4" stroke="#ffc72c" stroke-width="3"/><path d="M6 13 13 5l7 8" fill="none" stroke="#fff" stroke-width="3"/></svg>
+          </span>
+          <span class="logo__name">Дальний рейс<small>Междугородние перевозки</small></span>
+        </a>
+        <p>Регулярные автобусные рейсы из Самары и Тольятти по городам Поволжья и Урала.</p>
+      </div>
+      <div>
+        <h3>Пассажирам</h3>
+        <ul>
+          <li><a href="routes.html">Маршруты и расписание</a></li>
+          <li><a href="passengers.html#bagazh">Провоз багажа</a></li>
+          <li><a href="passengers.html#vozvrat">Возврат билетов</a></li>
+          <li><a href="passengers.html#deti">Поездки с детьми</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="fleet.html">Автопарк</a></li>
+          <li><a href="about.html#docs">Документы и лицензии</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li><a href="tel:+78460000000">+7 (846) 000-00-00</a></li>
+          <li><a href="mailto:info@example.ru">info@example.ru</a></li>
+          <li>Самара, ул. Авроры, 207,<br>Центральный автовокзал</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 ООО «Дальний рейс»</span>
+      <span>Демо-проект для портфолио: компания, расписание и цены вымышленные. Фото - Unsplash.</span>
+    </div>
+  </div>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
