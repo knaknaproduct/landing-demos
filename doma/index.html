@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ладный дом - проекты и строительство домов в Самаре</title>
+<meta name="description" content="24 проекта домов из бруса, газобетона и каркаса с ценами. Подбор по площади, этажности и бюджету, строительство под ключ в Самарской области.">
+<meta property="og:title" content="Ладный дом - проекты и строительство домов в Самаре">
+<meta property="og:description" content="24 проекта домов из бруса, газобетона и каркаса с ценами. Подбор по площади, этажности и бюджету, строительство под ключ в Самарской области.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">К содержанию</a>
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a class="logo" href="index.html" aria-label="Ладный дом, на главную">
+      <svg viewBox="0 0 36 32" width="36" height="32" aria-hidden="true"><path d="M2 15 18 3l16 12" fill="none" stroke="#b9783f" stroke-width="3" stroke-linejoin="round"/><rect x="7" y="15" width="22" height="15" fill="#1f3a2e"/><path d="M7 19h22M7 23h22M7 27h22" stroke="#b9783f" stroke-width="1.4"/></svg>
+      <span><b>Ладный дом</b><small>проекты и строительство домов</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Основное меню">
+      <a href="catalog.html">Каталог проектов</a>
+      <a href="index.html#kits">Комплектации</a>
+      <a href="index.html#steps">Как строим</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <a class="hdr__tel" href="tel:+78463307722">+7 (846) 330-77-22<small>ежедневно 9:00-20:00</small></a>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><span></span></button>
+  </div>
+</header>
+<main id="main">
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div class="hero__txt">
+      <h1>Дом из каталога с ценой, которая не вырастет после фундамента</h1>
+      <p class="lead">24 проекта из бруса, газобетона и каркаса. Стоимость фиксируем в договоре, планировку меняем под вас бесплатно.</p>
+      <form class="pick" action="catalog.html">
+        <div><label for="q-mat">Материал</label><select id="q-mat" name="mat"><option value="">Любой</option><option value="brus">Брус</option><option value="gaz">Газобетон</option><option value="karkas">Каркас</option></select></div>
+        <div><label for="q-floors">Этажность</label><select id="q-floors" name="floors"><option value="">Любая</option><option value="1">1 этаж</option><option value="1.5">С мансардой</option><option value="2">2 этажа</option></select></div>
+        <div><label for="q-area">Площадь до</label><select id="q-area" name="amax"><option value="">Любая</option><option value="100">100 м²</option><option value="150">150 м²</option><option value="200">200 м²</option></select></div>
+        <button class="btn" type="submit">Подобрать</button>
+      </form>
+    </div>
+    <div class="hero__pic"><div id="hero-pic"></div><div class="hero__badge"><b>Проект «Ладога», 168 м²</b>клеёный брус, от 5,38 млн ₽</div></div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec__head"><h2>Из чего строим</h2><p>У каждого материала свой срок и бюджет. Поможем выбрать под участок и сезон.</p></div>
+    <div class="mats">
+      <a class="mat" href="catalog.html?mat=brus"><div class="mat__sw" style="background:#c08a52"></div><h3>Клеёный брус</h3><p>Тёплый дом без внешней отделки. Можно заезжать сразу после сборки, усадка минимальная.</p><div class="mat__f"><span><span data-count="brus"></span> проектов</span><span>от 32 000 ₽/м²</span></div></a>
+      <a class="mat" href="catalog.html?mat=gaz"><div class="mat__sw" style="background:#d9d4ca"></div><h3>Газобетон</h3><p>Каменный дом на десятилетия. Подходит под любую отделку фасада, не горит.</p><div class="mat__f"><span><span data-count="gaz"></span> проектов</span><span>от 36 000 ₽/м²</span></div></a>
+      <a class="mat" href="catalog.html?mat=karkas"><div class="mat__sw" style="background:#4f6f6a"></div><h3>Каркас</h3><p>Самый быстрый и доступный вариант. Коробка за 6 недель, строим круглый год.</p><div class="mat__f"><span><span data-count="karkas"></span> проектов</span><span>от 26 000 ₽/м²</span></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--white">
+  <div class="wrap">
+    <div class="sec__head"><h2>Чаще всего выбирают</h2><a class="btn btn--ghost" href="catalog.html">Все 24 проекта</a></div>
+    <div class="grid" id="popular"></div>
+  </div>
+</section>
+
+<section class="sec sec--pine" id="steps">
+  <div class="wrap">
+    <div class="sec__head"><h2>Как строим</h2></div>
+    <ol class="steps">
+      <li><span>1 день</span><b>Выезд на участок</b><p>Смотрим рельеф, подъезд и грунт, бесплатно.</p></li>
+      <li><span>1 неделя</span><b>Смета и договор</b><p>Фиксируем цену и сроки, правим планировку.</p></li>
+      <li><span>2-3 недели</span><b>Фундамент</b><p>Свайно-винтовой, ленточный или плита по геологии.</p></li>
+      <li><span>1-4 месяца</span><b>Дом</b><p>Фотоотчёт каждую неделю, оплата по этапам.</p></li>
+      <li><span>1 день</span><b>Приёмка</b><p>Подписываем акт, даём гарантию 10 лет на конструктив.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="kits">
+  <div class="wrap">
+    <div class="sec__head"><h2>Три комплектации</h2><p>Цены для проекта «Онега», 124 м², газобетон.</p></div>
+    <div class="kits">
+      <div class="kit"><h3>Тёплый контур</h3><p class="kit__price">4 460 000 ₽</p><p class="kit__m2">36 000 ₽ за м²</p><ul><li>Фундамент и коробка дома</li><li>Кровля с утеплением</li><li>Окна и входная дверь</li><li>Утепление стен и пола</li></ul></div>
+      <div class="kit kit--main"><h3>Под чистовую отделку</h3><p class="kit__price">6 020 000 ₽</p><p class="kit__m2">48 600 ₽ за м²</p><ul><li>Всё из тёплого контура</li><li>Электрика и разводка воды</li><li>Стяжка пола, черновые стены</li><li>Отопление и котёл</li></ul></div>
+      <div class="kit"><h3>Под ключ</h3><p class="kit__price">7 810 000 ₽</p><p class="kit__m2">63 000 ₽ за м²</p><ul><li>Всё из предыдущей комплектации</li><li>Чистовая отделка, двери, сантехника</li><li>Фасад и отмостка</li><li>Уборка, можно заезжать</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--white">
+  <div class="wrap cta">
+    <div>
+      <h2>Не нашли подходящий проект?</h2>
+      <p class="lead">Пришлите размеры участка и пожелания. Архитектор подберёт 3 проекта и посчитает каждый, ответ в течение дня.</p>
+    </div>
+    <form class="form" novalidate>
+      <div class="form__body">
+        <div class="field"><label for="f-name">Как к вам обращаться</label><input id="f-name" name="name" autocomplete="name" data-req><div class="err">Напишите имя</div></div>
+        <div class="field"><label for="f-tel">Телефон</label><input id="f-tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" data-req><div class="err">Введите номер полностью</div></div>
+        <div class="field"><label for="f-msg">Участок и пожелания</label><textarea id="f-msg" name="msg" rows="3" placeholder="Например: 12 соток, Смышляевка, нужен дом до 140 м² с террасой"></textarea></div>
+        <label class="check"><input type="checkbox" name="agree" checked><span>Согласен на обработку персональных данных и с <a href="privacy.html">политикой конфиденциальности</a></span></label>
+        <button class="btn" type="submit">Подобрать проекты</button>
+      </div>
+      <p class="form__ok" role="status">Заявка принята. Архитектор свяжется с вами в течение дня.</p>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="ftr">
+  <div class="wrap ftr__in">
+    <div>
+      <b class="ftr__name">Ладный дом</b>
+      <p>Строим дома из бруса, газобетона и по каркасной технологии в Самаре и области. 24 готовых проекта, изменения планировки бесплатно.</p>
+      <p class="ftr__small">Демо-сайт, компания и цены условные.</p>
+    </div>
+    <div>
+      <b>Каталог</b>
+      <a href="catalog.html?mat=brus">Дома из бруса</a>
+      <a href="catalog.html?mat=gaz">Дома из газобетона</a>
+      <a href="catalog.html?mat=karkas">Каркасные дома</a>
+      <a href="catalog.html?floors=1">Одноэтажные</a>
+    </div>
+    <div>
+      <b>Связаться</b>
+      <a href="tel:+78463307722">+7 (846) 330-77-22</a>
+      <a href="mailto:dom@ladny-demo.ru">dom@ladny-demo.ru</a>
+      <span>Выставка домов: Самара, Красноглинский район, ул. Солнечная, 15</span>
+      <a href="privacy.html">Политика конфиденциальности</a>
+    </div>
+  </div>
+</footer>
+<script src="js/data.js"></script>
+<script src="js/house.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
